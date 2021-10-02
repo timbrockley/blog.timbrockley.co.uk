@@ -6,9 +6,12 @@ image: "/assets/images/development/delete-github-commit-history/github_logo_200x
 categories: [development]
 tags: [github, github-commit-history, github-repository]
 ---
-### First Method
 
 To delete all existing commits and recreate an initial commit.
+
+NB. Some repositories use **main** instead of **master** as a branch name.
+
+### First Method
 
 ```
 # Clone the project, e.g. "myproject" is my project repository:
@@ -24,7 +27,7 @@ git checkout --orphan TEMP_BRANCH
 git add -A
 
 # Commit the changes:
-git commit -am "Initial commit"
+git commit -am "initial commit"
 
 # Delete the old branch:
 git branch -D master
@@ -58,7 +61,7 @@ git remote -v
 
 # Add all the files and commit the changes:
 git add --all
-git commit -am "Initial commit"
+git commit -am "initial commit"
 
 # Force push update to the master branch of our project repository:
 git push -f origin master
