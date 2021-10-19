@@ -26,6 +26,9 @@ git config [<i>OPTIONS</i>]
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 
+<u>Default Branch Name</u>
+git config --global init.defaultBranch main
+
 <u>Aliases</u>
 git config --global alias.add-commit '!git add -A && git commit'
 
